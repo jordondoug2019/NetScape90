@@ -3,17 +3,20 @@
 #You have been sucked into a 90s Cable Network and have to complete several challenges to get back to the present year.
 
 #Welcome Screen
-
+#Receive User input
 echo "Welcome to NetScape90. Please Enter Your name to continue"
 read playerName 
 
+#Player is presented with a choice.
 echo "Hello $playerName! Please choose 1 to continue or 2 to quit "
 echo "1. Let's Go!"
 echo "2. Quit"
 
+#while loop is used for the  duration of game play. The loop will not break unless a choice is made that validates the break.
 while true 
 do
     read playerChoice
+#I used Switch cases for the main menu. It was easier to use instead of multiple If/Else conditionals. 
     case $playerChoice in 
         1) 
             echo "NetScape Loading......."
